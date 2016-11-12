@@ -1,0 +1,7 @@
+[package]
+name = "rustlogger"
+version = "0.1.0"
+authors = ["yedpodtrzitko <yed@vanyli.net>"]
+
+[dependencies]
+redis = "0.6.0"

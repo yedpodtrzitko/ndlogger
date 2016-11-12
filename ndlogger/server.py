@@ -11,7 +11,8 @@ def serve_forever():
     # Jenkins<3><BOT><EMPIRE>
     re_bot = re.compile(r'"(.*?)<(\d+)><BOT><(.*?)>"')
 
-    s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    # s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     s.bind(('0.0.0.0', 27500))
 
     q = queue.RedisQueue('ndstats')
